@@ -1,10 +1,10 @@
 
-#include <iostream>
+#include "errors.hpp"
 
-int main()
+
+
+void digilog_main()
 {
 
-	std::cout << "Hello world!";
-
-	return 0;
 }
+
