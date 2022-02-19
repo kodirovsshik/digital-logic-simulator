@@ -1,13 +1,8 @@
 
-#pragma warning(disable : 4003 4530)
-
 #include "errors.hpp"
 #include "globals.hpp"
 
 #include <iostream>
-
-//char** saved_argv = NULL;
-//int saved_argc = 0;
 
 
 void wrap1()
@@ -38,5 +33,7 @@ int main()
 	logger.add(std::cerr);
 
 	excp_try(wrap1, exception_handler, NULL);
+
+	logger << "Process finished normally\n";
 	return 0;
 }
